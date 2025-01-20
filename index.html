@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"></meta>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    ></meta>
+
+    <link
+        rel="stylesheet"
+        href="./css/main.css"
+    ></link>
+
+    <title>Document</title>
+</head>
+
+<!-- header, main content, footer -->
+
+<body>
+    <header class="header__section">
+        <nav class="navbar__header__section">
+            <div>
+                <img
+                    src="./assets/freshbooks-logo-white.6ab12049.svg"
+                    alt="freshbooks logo brand icon"
+                >
+            </div>
+
+            <ul class="navbar__lists">
+                <li class="item1">
+                    <a href="#">Try If Free</a>
+                </li>
+
+                <li class="item2">
+                    <a href="#">See Plans and Pricing</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero__section">
+            <div class="container">
+                <div class="hero__section__container">
+                    <div class="hero__title">
+                        <h1>
+                            Accounting software that makes the hard part easy
+                        </h1>
+
+                        <form
+                            class="hero__form"
+                            action="/submit-email"
+                            method="post"
+                        >
+                            <input
+                                class="hero__input__form"
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Email"
+                                required="required"
+                            ></input>
+
+                            <button
+                                class="hero__btn"
+                                type="submit"
+                            >Try It Free</button>
+                        </form>
+
+                        <p>
+                            Try it free for 30 days. No credit card required. Cancel anytime.
+                        </p>
+                    </div>
+
+                    <div class="default__hero__section">
+                        <img
+                            src="./assets/default_image.png"
+                            alt=""
+                        >
+                    </div>
+                </div>
+
+                <div class="hero__sub__section">
+                    <p>
+                        Your entire business. One platform.
+                    </p>
+                </div>
+
+                <div class="business__one__platform__hero grid grid--3--cols">
+                    <div class="box1">
+                        <img
+                            src="./assets/laptop.svg"
+                            alt=""
+                        >
+
+                        <h3>
+                            Accounting software that's easy to use
+                        </h3>
+
+                        <p>
+                            User-friendly accounting software with all the tools you need to run your business.
+                        </p>
+                    </div>
+
+                    <div class="box2">
+                        <img
+                            src="./assets/circle-square.svg"
+                            alt=""
+                        >
+
+                        <h3>
+                            All-in-one accounting software solution
+                        </h3>
+
+                        <p>
+                            Create invoices, accept payments, control your finances, and pay your team, all on a single platform.
+                        </p>
+                    </div>
+
+                    <div class="box3">
+                        <img
+                            src="./assets/emoji-smile.svg"
+                            alt=""
+                        >
+
+                        <h3>
+                            Award-winning customer support
+                        </h3>
+
+                        <p>
+                            Get access to our Support team, who are here to ensure you get the help you need when you need it.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container testimonials">
+            <!-- Container for the "main" area (images + text) -->
+
+            <div class="testimonals__container">
+                <!-- SLIDE 1 -->
+
+                <div
+                    class="testimonial-slide active"
+                    id="slide-1"
+                >
+                    <img
+                        src="./assets/testimonial-us-01-1.png"
+                        alt=""
+                    >
+
+                    <div class="testimonal__description__title">
+                        <h4>
+                            FreshBooks has really helped
+
+                            <br>
+                            me to be more efficient
+
+                            <br>
+                            throughout the year so that tax
+
+                            <br>
+                            time…it’s less stressful
+                        </h4>
+                    </div>
+                </div>
+
+                <!-- SLIDE 2 -->
+
+                <div
+                    class="testimonial-slide"
+                    id="slide-2"
+                >
+                    <img
+                        src="./assets/testimonial-us-02-1.png"
+                        alt=""
+                    >
+
+                    <div class="testimonal__description__title">
+                        <h4>
+                            Accounting’s not that scary.
+
+                            <br>
+                            It can be easy or easy-ish.
+
+                            <br>
+                            FreshBooks definitely makes it
+
+                            <br>
+                            easier for us ‘non-numbers’
+
+                            <br>
+                            people
+                        </h4>
+                    </div>
+                </div>
+
+                <!-- SLIDE 3 -->
+
+                <div
+                    class="testimonial-slide"
+                    id="slide-3"
+                >
+                    <img
+                        src="./assets/testimonial-us-03-1.png"
+                        alt=""
+                    >
+
+                    <div class="testimonal__description__title">
+                        <h4>
+                            We’re basically saving $2000
+
+                            <br>
+                            a month. And that doesn’t
+
+                            <br>
+                            include all the things that we
+
+                            <br>
+                            were able to do in place of all
+
+                            <br>
+                            that admin.
+                        </h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- /.testimonals__container -->
+            <!-- Container for your bottom “gallery” of thumbnails -->
+
+            <div class="img-gallery">
+                <div class="img-gallery-testimonials">
+                    <!-- Thumbnails point to whichever slide they control via data-target -->
+
+                    <img
+                        class="img-sub-section active"
+                        src="./assets/testimonial-us-01-1.png"
+                        alt=""
+                        data-target="slide-1"
+                    >
+
+                    <img
+                        class="img-sub-section"
+                        src="./assets/testimonial-us-02-1.png"
+                        alt=""
+                        data-target="slide-2"
+                    >
+
+                    <img
+                        class="img-sub-section"
+                        src="./assets/testimonial-us-03-1.png"
+                        alt=""
+                        data-target="slide-3"
+                    >
+                </div>
+
+                <!-- Name and subtitle (optional) -->
+
+                <div class="sub-text-title">
+                    <span>Damona Hoffman</span>
+
+                    <p>Dear Mrs D, Inc.</p>
+                </div>
+            </div>
+
+            <!-- /.img-gallery -->
+        </section>
+
+        <!-- <section class="container more__reason__love__section grid grid--4--cols">
+            <div class="box_1">
+                <h4>
+                    More reasons to love FreshBooks
+                </h4>
+
+                <div class="sub__box__1">
+                    <span>Try It Free</span>
+
+                    <p>See Plans and Pricing</p>
+                </div>
+            </div>
+            
+            <div></div>
+
+            <div class="box_2">
+                <div class="sub__box__2">
+                    <img
+                        src="./assets/stopwatch.svg"
+                        alt=""
+                    >
+
+                    <h4>
+                        553
+
+                        <span></span>
+                    </h4>
+
+                    <p>
+                        Save up to 553 hours each year by using FreshBooks
+                    </p>
+                </div>
+            </div>
+        </section> -->
+    </main>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

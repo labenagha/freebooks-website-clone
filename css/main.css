@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Ubuntu", serif;
+}
+
+/* resuable */
+.grid {
+  display: grid;
+}
+
+.grid--3--cols {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.grid--4--cols {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.header__section {
+  background-color: #000080;
+  width: 100%;
+}
+
+.navbar__header__section {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.8rem 5.4rem;
+}
+
+.navbar__header__section img {
+  height: 4rem;
+}
+
+.navbar__lists {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.item1 {
+  display: inline-block;
+  padding: 0.8rem 1rem;
+  border-radius: 5px;
+  font-weight: 700;
+  background-color: #009900;
+  cursor: pointer;
+}
+
+.item2 {
+  display: inline-block;
+  padding: 0.5rem 1.6rem;
+  border-radius: 5px;
+  font-weight: 600;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+.item1 a,
+.item2 a {
+  color: #fff;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+.item1:hover,
+.item1:active {
+  background-color: #006600;
+  transition: all 0.3s ease;
+}
+
+.item2:hover,
+.item2:active {
+  background-color: #fff;
+  color: #333e;
+}
+
+.item2 a:hover,
+.item2 a:active {
+  color: #333;
+}
+
+/* Hero Section */
+.hero__section {
+  background-color: #000080;
+}
+
+.container {
+  max-width: 150rem;
+  margin: 0 auto;
+  padding-bottom: 10rem;
+}
+
+.hero__section__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 13.5rem;
+}
+
+.hero__title h1 {
+  font-size: 6.6rem;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #fff;
+  margin-bottom: 4.2rem;
+}
+
+.hero__form {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.hero__input__form {
+  padding: 1.4rem 5.8rem;
+  border-radius: 3px;
+  border: 2px solid red;
+}
+
+.hero__btn {
+  padding: 1.2rem 1.8rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.hero__btn {
+  background-color: #009900;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.hero__title p {
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 300;
+  margin-top: 0.5rem;
+}
+
+.hero__btn:hover,
+.hero__btn:active {
+  background-color: #006600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.hero__sub__section {
+  padding: 0 12rem;
+  margin-bottom: 5rem;
+}
+
+.hero__sub__section p {
+  font-size: 4.2rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.business__one__platform__hero {
+  padding: 0 12rem;
+}
+
+.box1,
+.box2,
+.box3 {
+  min-height: 20rem;
+  background-color: #000066;
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.351);
+  padding: 3rem 2rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.box1 h3,
+.box1 p,
+.box2 h3,
+.box2 p,
+.box3 h3,
+.box3 p {
+  color: #fff;
+}
+
+
+.box1 h3,
+.box2 h3,
+.box3 h3 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.box1,
+.box2,
+.box3 {
+  font-size: 1.4rem;
+}
+
+
+.box1 img,
+.box2 img,
+.box3 img {
+  color: #fff;
+  height: 3rem;
+}
+
+
+/* Testimonals */
+.testimonials {
+  background-color: #e9e9ff;
+  position: relative;
+  padding-bottom: 10rem;
+}
+
+.testimonals__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  padding: 7rem 0;
+}
+
+.testimonial-slide img {
+  width: 20%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+.testimonal__description__title h4 {
+  font-size: 3.2rem;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-top: 3rem;
+  color: #333;
+}
+
+.testimonal__description__title span {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.testimonal__description__title p {
+  padding-top: 2rem;
+  color: #333333a6;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.testimonial-slide.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+}
+
+.img-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  position: absolute;
+  top: 65%;
+  left: 18%;
+  padding: 2.5rem;
+}
+
+.img-sub-section {
+  width: 6rem;
+  height: 6rem;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+.sub-text-title span {
+  padding: 5rem 0;
+  font-size: 2rem;
+}
+
+.sub-text-title p {
+  margin-top: 1.2rem;
+  font-size: 1.5rem;
+  color: #333333d7;
+  font-weight: 400;
+}
+
+.img-gallery-testimonials {
+  display: flex;
+  gap: 3rem;
+}
+
+.img-sub-section {
+  filter: blur(1px);
+  transition: filter 0.3s;
+}
+
+.img-sub-section:hover {
+  filter: blur(0);
+  cursor: pointer;
+}
+
+.img-sub-section.active {
+  filter: none;
+}
+
+.testimonial-slide {
+  display: none;
+}
+
+
+/* More Reason To Love Frebooks Session */
+.more__reason__love__section {
+  padding: 8rem 12rem;
+}
+
+.box_1 {
+  grid-column: 1 / 3;
+  background-color: #ffffe6;
+  width: 60rem;
+  height: 28rem;
+  border-radius: 10px;
+  padding-top: 6rem;
+  padding-bottom: 12rem;
+  padding-left: 3rem;
+  box-shadow: 2px 2px 5px 0 rgba(250, 252, 214, 0.351);
+}
+
+.box_1 h4 {
+  font-size: 3.8rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.sub__box__1 {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.sub__box__1 span {
+  display: inline-block;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 2rem;
+  background-color: #009900;
+  cursor: pointer;
+  color: #fff;
+}
+
+.sub__box__1 span:hover,
+.sub__box__1 span:active {
+  background-color: #006600;
+  transition: all 0.3s ease;
+}
+
+.sub__box__1 p {
+  font-size: 1.5rem;
+  display: inline-block;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 2.2rem;
+  border: 2px solid #333;
+  cursor: pointer;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.sub__box__1 p:hover,
+.sub__box__1 p:active {
+  background-color: #000066;
+  transition: all 0.3s ease;
+  color: #fff;
+}
+
+.sub__box__2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2rem;
+  background-color: #3333ff;
+  width: 60rem;
+  height: 28rem;
+}
+
+.sub__box__2 img {
+  height: 3rem;
+  width: 3rem;
+}
+
+.sub__box__2 h4 {
+  font-size: 6rem
+}
+
+.sub__box__2 p {
+  font-size: 2rem;
+}
+
+@media (max-width: 650px) {
+  .hero__section__container {
+    flex-direction: column;
+  }
+
+  .hero__form {
+    flex-direction: column;
+  }
+
+  .hero__sub__section p {
+    font-size: 0.8rem;
+  }
+
+  .item2 {
+    display: none;
+  }
+
+  .hero__title h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+
+  .grid--3--cols {
+    grid-template-columns: 1fr;
+  }
+
+  .img-gallery {
+    display: none;
+  }
+
+  .testimonals__container {
+    flex-direction: column;
+  }
+}
+
+
+@media (max-width: 75em) {
+  .navbar__header__section img {
+    height: 2rem;
+  }
+
+  .item1 {
+    padding: 0.4rem 1rem;
+    border-radius: 2px;
+  }
+
+  .item1 a {
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+  
+  .item2 {
+    padding: 0.5rem 1rem;
+    border-radius: 2px;
+    font-weight: 600;
+  }
+
+  .item2 a {
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  .hero__section__container {
+    padding-top: 2.2rem;
+    gap: 5rem;
+  }
+
+  .default__hero__section img {
+    width: 100%;
+  }
+
+  .hero__title h1 {
+    font-size: 4.8rem;
+    line-height: 1.1;
+    font-weight: bold;
+  }
+
+  .hero__input__form {
+    padding: 0.5rem 2.5rem;
+    border-radius: 2px;
+    /* border: 1px solid red; */
+  }
+
+  .hero__btn {
+    padding: 0.5rem 1.2rem;
+    border-radius: 2px;
+    border: none;
+  }
+
+  .hero__title p {
+    font-size: 0.8rem;
+  }
+
+  .hero__sub__section p {
+    font-size: 3rem;
+  }
+
+  .box1 h3,
+  .box2 h3,
+  .box3 h3 {
+    font-size: 1.5rem;
+  }
+
+  .box1 p,
+  .box2 p,
+  .box3 p {
+    font-size: 1rem;
+  }
+
+  .testimonal__description__title h4 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 1.7;
+  }
+
+}

@@ -128,7 +128,7 @@ body {
 .hero__input__form {
   padding: 1.4rem 5.8rem;
   border-radius: 3px;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 .hero__btn {
@@ -418,8 +418,14 @@ body {
 }
 
 @media (max-width: 650px) {
+  
+  .navbar__header__section {
+    padding: 0.8rem;
+  }
+
   .hero__section__container {
     flex-direction: column;
+    padding: 2.5rem;
   }
 
   .hero__form {
@@ -430,14 +436,30 @@ body {
     font-size: 0.8rem;
   }
 
+  .hero__input__form {
+    width: 40rem;
+    height: 3.2rem;
+    border-radius: 2px;
+  }
+
+  .hero__btn {
+    width: 40rem;
+    height: 3.2rem;
+    border-radius: 2px;
+  }
+
   .item2 {
     display: none;
   }
 
   .hero__title h1 {
     text-align: center;
-    font-size: 2.5rem;
-    font-weight: 500;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  .hero__title p {
+    text-align: center;
   }
 
   .grid--3--cols {
@@ -451,6 +473,23 @@ body {
   .testimonals__container {
     flex-direction: column;
   }
+
+  .business__one__platform__hero {
+    padding: 3rem;
+  }
+
+  .box1 h3,
+  .box2 h3,
+  .box3 h3 {
+    font-size: 3.5rem;
+  }
+
+  .box1 p,
+  .box2 p,
+  .box3 p {
+    font-size: 1.5rem;
+  }
+
 }
 
 
